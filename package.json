@@ -2,6 +2,7 @@
   "name": "@hongbusi/icons-monorepo",
   "private": true,
   "scripts": {
+    "build": "pnpm run -C ./packages/vue build",
     "optimize": "pnpm run -C ./packages/svg optimize",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

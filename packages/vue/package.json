@@ -1,0 +1,81 @@
+{
+  "name": "@hongbusi/icons-vue",
+  "type": "module",
+  "version": "2.0.9",
+  "description": "Vue components of Element Plus Icons collection.",
+  "license": "MIT",
+  "homepage": "https://github.com/Hongbusi/icons/issue",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hongbusi/icons.git",
+    "directory": "packages/vue"
+  },
+  "bugs": {
+    "url": "https://github.com/Hongbusi/icons/issues"
+  },
+  "keywords": [
+    "icon",
+    "svg",
+    "vue",
+    "element-plus"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    },
+    "./global": {
+      "require": "./dist/global.cjs",
+      "import": "./dist/global.js"
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "unpkg": "dist/index.iife.min.js",
+  "jsdelivr": "dist/index.iife.min.js",
+  "types": "index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/types/*"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm run build:generate && run-p build:build build:types",
+    "build:generate": "tsx build/generate.ts",
+    "build:build": "tsx build/build.ts",
+    "build:types": "vue-tsc --declaration --emitDeclarationOnly"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "devDependencies": {
+    "@hongbusi/icons-svg": "workspace:*",
+    "@pnpm/find-workspace-dir": "^4.0.2",
+    "@pnpm/find-workspace-packages": "^4.0.17",
+    "@pnpm/logger": "^4.0.0",
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.0.0",
+    "@types/prettier": "^2.6.3",
+    "camelcase": "^7.0.0",
+    "chalk": "^5.0.1",
+    "consola": "^2.15.3",
+    "esbuild": "^0.14.48",
+    "esbuild-plugin-globals": "^0.1.1",
+    "fast-glob": "^3.2.11",
+    "fs-extra": "^10.1.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "tsx": "^3.6.0",
+    "typescript": "^4.7.4",
+    "unplugin-vue": "^2.2.1",
+    "vue": "^3.2.37",
+    "vue-tsc": "^0.38.2"
+  }
+}
