@@ -5,7 +5,7 @@
     "dev": "pnpm run -C playground dev",
     "build": "pnpm run -C ./packages/vue build",
     "optimize": "pnpm run -C ./packages/svg optimize",
-    "release": "bumpp packages/*/package.json --no-push",
+    "release": "bumpp --commit --tag && npm publish",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky install"
