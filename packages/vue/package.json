@@ -1,10 +1,10 @@
 {
   "name": "@hongbusi/icons-vue",
   "type": "module",
-  "version": "2.0.9",
-  "description": "Vue components of Element Plus Icons collection.",
+  "version": "0.0.0",
+  "description": "Vue  Icon components collection.",
   "license": "MIT",
-  "homepage": "https://github.com/Hongbusi/icons/issue",
+  "homepage": "https://github.com/Hongbusi/icons/README",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hongbusi/icons.git",
@@ -17,7 +17,7 @@
     "icon",
     "svg",
     "vue",
-    "element-plus"
+    "hongbusi"
   ],
   "sideEffects": false,
   "exports": {

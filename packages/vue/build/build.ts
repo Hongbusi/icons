@@ -27,7 +27,7 @@ const buildBundle = async () => {
       format,
       minifySyntax: true,
       banner: {
-        js: `/*! Element Plus Icons Vue v${version} */\n`
+        js: `/*! Vue  Icon components collection v${version} */\n`
       },
       outdir: pathOutput
     }
@@ -37,7 +37,7 @@ const buildBundle = async () => {
           vue: 'Vue'
         })
       )
-      options.globalName = 'ElementPlusIconsVue'
+      options.globalName = 'HongbusiIconsVue'
     }
     else {
       options.external = ['vue']
