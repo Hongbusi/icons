@@ -2,6 +2,7 @@
   "name": "@hongbusi/icons-monorepo",
   "private": true,
   "scripts": {
+    "dev": "pnpm run -C playground dev",
     "build": "pnpm run -C ./packages/vue build",
     "optimize": "pnpm run -C ./packages/svg optimize",
     "release": "bumpp packages/*/package.json",
