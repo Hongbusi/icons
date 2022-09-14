@@ -1,21 +1,12 @@
-<script lang="ts" setup>
-import { icons } from '@hongbusi/icons-vue/global'
+<script setup lang="ts">
+useHead({
+  title: 'starter-vue',
+  meta: [
+    { name: 'description', content: 'A template to quickly create a vue project.' }
+  ]
+})
 </script>
 
 <template>
-  <component :is="Icon" v-for="(Icon, key) in icons" :key="key" class="icon" />
-  <hr>
-  <component
-    :is="`HIcon${key}`"
-    v-for="key in Object.keys(icons)"
-    :key="key"
-    class="icon"
-  />
+  <router-view />
 </template>
-
-<style>
-.icon {
-  height: 48px;
-  color: #409eff;
-}
-</style>
