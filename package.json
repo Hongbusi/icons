@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "pnpm run -C playground dev",
     "build": "pnpm run -C ./packages/vue build",
+    "build:play": "pnpm run -C playground build",
     "optimize": "pnpm run -C ./packages/svg optimize",
     "release": "bumpp packages/*/package.json",
     "lint": "eslint .",
