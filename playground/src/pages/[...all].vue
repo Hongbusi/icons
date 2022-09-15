@@ -1,6 +1,6 @@
 <template>
-  <div>
-    not fount
+  <div class="pt-40 text-3xl text-center">
+    Not Fount Page
   </div>
 </template>
 

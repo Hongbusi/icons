@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'icons',
+  title: 'Icons',
   meta: [
     { name: 'description', content: 'Icons.' }
   ]
