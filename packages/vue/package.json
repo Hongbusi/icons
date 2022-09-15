@@ -2,9 +2,9 @@
   "name": "@hongbusi/icons-vue",
   "type": "module",
   "version": "0.0.5",
-  "description": "Vue  Icon components collection.",
+  "description": "Vue Icon components collection.",
   "license": "MIT",
-  "homepage": "https://github.com/Hongbusi/icons/README",
+  "homepage": "https://github.com/Hongbusi/icons#README",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hongbusi/icons.git",
