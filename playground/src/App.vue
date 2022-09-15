@@ -1,8 +1,8 @@
 <script setup lang="ts">
 useHead({
-  title: 'starter-vue',
+  title: 'icons',
   meta: [
-    { name: 'description', content: 'A template to quickly create a vue project.' }
+    { name: 'description', content: 'Icons.' }
   ]
 })
 </script>
