@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "pnpm run -C playground dev",
-    "build": "pnpm run -C ./packages/vue build",
+    "build": "npm-run-all build:vue build:play",
+    "build:vue": "pnpm run -C ./packages/vue build",
     "build:play": "pnpm run -C playground build",
     "optimize": "pnpm run -C ./packages/svg optimize",
     "release": "bumpp packages/*/package.json",
@@ -19,6 +20,7 @@
     "eslint": "^8.22.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
+    "npm-run-all": "^4.1.5",
     "typescript": "^4.7.4",
     "vite": "^3.0.9"
   },
